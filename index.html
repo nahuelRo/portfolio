@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Nahuel Rodriguez</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Hamburguer css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+    integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Style.css -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <!-- Nav -->
+  <header class="header">
+    <a class="logo" href="index.html#home">Nahuel <span class="logo__span">.</span></a>
+
+    <button class="hamburger hamburger--collapse" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <nav class="nav">
+      <ul class="nav-container">
+        <li class="nav-container__item">
+          <a class="nav-container__link active" href="index.html#home">Inicio</a>
+        </li>
+        <li class="nav-container__item">
+          <a class="nav-container__link" href="#">Sobre mi</a>
+        </li>
+        <li class="nav-container__item">
+          <a class="nav-container__link" href="#">Habilidades</a>
+        </li>
+        <li class="nav-container__item">
+          <a class="nav-container__link" href="#">Proyectos</a>
+        </li>
+        <li class="nav-container__item">
+          <a class="nav-container__link" href="#">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main" id="home">
+    <div class="text">
+      <h1 class="text__title">Nahuel Rodriguez</h1>
+      <h2 class="text__subtitle">Frontend developer</h2>
+      <p class="text__paragraph">
+        Desarrollador frontend especializado en crear experiencias de usuario
+        atractivas y eficientes.
+      </p>
+
+      <div class="buttons">
+        <a class="buttons__button button--variant" href="#">Contactame</a>
+        <a class="buttons__button" href="#">Portfolio <i class="fa-solid fa-angles-down"></i></a>
+      </div>
+    </div>
+    <img class="img" src="./assets/foto-principal.png" alt="Imagen de mi rostro" />
+  </main>
+
+  <div class="scroll-down">
+    <i class="fa-solid fa-angle-down"></i>
+  </div>
+
+  <!-- About -->
+  <section class="section">
+    <h2 class="title">Sobre mí</h2>
+    <hr class="separator" />
+    <div class="about">
+      <img class="about__image" src="./assets/Imagen principal.svg" alt="Ilustración" />
+      <p class="about__paragraph">
+        Hola, soy Nahuel Rodriguez, un desarrollador frontend con experiencia
+        en diseño y desarrollo de sitios web. <br /><br />
+        Me apasiona la tecnología, el diseño y la creación de soluciones
+        creativas y efectivas. Tengo habilidades en HTML, CSS, JavaScript,
+        React, y otras tecnologías de frontend.
+        <br /><br />
+        Trabajo de manera colaborativa y me enfoco en la usabilidad y
+        accesibilidad para crear experiencias digitales fáciles de usar para
+        todos. Si estás interesado en trabajar conmigo, no dudes en ponerte en
+        contacto.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills and Tools -->
+  <section class="section section--bg">
+    <h2 class="title">Habilidades y herramientas</h2>
+    <hr class="separator separator--left" />
+    <div class="grid-skills">
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/react.svg" alt="React" />
+        <h4 class="grid-skills-card__title">React</h4>
+      </div>
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/html.svg" alt="React" />
+        <h4 class="grid-skills-card__title">HTML</h4>
+      </div>
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/css.svg" alt="React" />
+        <h4 class="grid-skills-card__title">CSS</h4>
+      </div>
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/figma.svg" alt="React" />
+        <h4 class="grid-skills-card__title">Figma</h4>
+      </div>
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/javascript.svg" alt="React" />
+        <h4 class="grid-skills-card__title">JavaScript</h4>
+      </div>
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/nodejs.svg" alt="React" />
+        <h4 class="grid-skills-card__title">NodeJS</h4>
+      </div>
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/git.svg" alt="React" />
+        <h4 class="grid-skills-card__title">Git</h4>
+      </div>
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/visual-studio-code.svg" alt="React" />
+        <h4 class="grid-skills-card__title">VSCode</h4>
+      </div>
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/sass.svg" alt="React" />
+        <h4 class="grid-skills-card__title">Sass</h4>
+      </div>
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/github.svg" alt="React" />
+        <h4 class="grid-skills-card__title">Github</h4>
+      </div>
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/bootstrap.svg" alt="React" />
+        <h4 class="grid-skills-card__title">Bootstrap</h4>
+      </div>
+      <div class="grid-skills-card">
+        <img class="grid-skills-card__image" src="./assets/npm.svg" alt="React" />
+        <h4 class="grid-skills-card__title">NPM</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section">
+    <h2 class="title">Portfolio</h2>
+    <hr class="separator" />
+    <div class="portfolio">
+      <p class="portfolio__paragraph">
+        Algunos de los proyectos en los que he trabajado
+      </p>
+
+      <!-- CARD 1 -->
+      <div class="card">
+        <img class="card__image" src="./assets/card-1.jpg" alt="Card 1" />
+        <div class="card__text">
+          <div class="card__top">
+            <h2 class="card__top__title">PROYECTO I</h2>
+            <div class="card__top__skills">
+              <img class="card__top__image" src="./assets/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/react.svg" alt="React">
+            </div>
+          </div>
+          <h3 class="card__title">Ecommerse web app</h3>
+          <p class="card__paragraph">
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+            texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se
+            dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un
+            libro de textos especimen. No sólo sobrevivió 500 años
+          </p>
+          <div class="card__buttons">
+            <a class="button" href="#">Ver</a>
+            <a class="button" href="#">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card card--reverse">
+        <img class="card__image" src="./assets/card-2.jpg" alt="Card 2" />
+        <div class="card__text card--reverse__text ">
+          <div class="card__top">
+            <h2 class="card__top__title">PROYECTO II</h2>
+            <div class="card__top__skills">
+              <img class="card__top__image" src="./assets/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/react.svg" alt="React">
+            </div>
+          </div>
+          <h3 class="card__title">Ecommerse web app</h3>
+          <p class="card__paragraph">
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+            texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se
+            dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un
+            libro de textos especimen. No sólo sobrevivió 500 años
+          </p>
+          <div class="card__buttons">
+            <a class="button" href="#">Ver</a>
+            <a class="button" href="#">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <img class="card__image" src="./assets/card-3.jpg" alt="Card 3" />
+        <div class="card__text">
+          <div class="card__top">
+            <h2 class="card__top__title">PROYECTO III</h2>
+            <div class="card__top__skills">
+              <img class="card__top__image" src="./assets/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/react.svg" alt="React">
+            </div>
+          </div>
+          <h3 class="card__title">Ecommerse web app</h3>
+          <p class="card__paragraph">
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+            texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se
+            dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un
+            libro de textos especimen. No sólo sobrevivió 500 años
+          </p>
+          <div class="card__buttons">
+            <a class="button" href="#">Ver</a>
+            <a class="button" href="#">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--bg">
+    <h2 class="title">Contacto</h2>
+    <hr class="separator separator--left" />
+
+    <div class="contact">
+      <div class="contact-information">
+        <a class="contact-information__link" href="#">
+          <i class="fa-solid fa-envelope fa-xl"></i>
+          nahuelr.developer@gmail.com
+        </a>
+        <a class="contact-information__link" href="#">
+          <i class="fa-solid fa-square-phone fa-xl"></i>
+          +54 3329 508094
+        </a>
+        <a class="contact-information__link" href="#">
+          <i class="fa-brands fa-linkedin fa-xl"></i>
+          Nahuel Rodriguez
+        </a>
+        <a class="contact-information__link" href="#">
+          <i class="fa-brands fa-github fa-xl"></i>
+          Nahuel Rodriguez
+        </a>
+      </div>
+
+      <form class="contact__form">
+        <div class="contact__form__top">
+          <input class="contact__form__name" type="text" placeholder="Nombre">
+          <input class="contact__form__email" type="text" placeholder="Email">
+        </div>
+        <input class="contact__form__asunto" type="text" placeholder="Asunto">
+        <textarea class="contact__form__textarea" name="mensaje" id="" cols="30" rows="10"
+          placeholder="Mensaje"></textarea>
+
+        <input class="button" type="submit" value="Enviar">
+
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-role">
+        <h2 class="footer-role__title">Nahuel</h2>
+        <h3 class="footer-role__subtitle">Frontend developer</h3>
+      </div>
+
+      <div class="footer-contact">
+        <h2 class="footer-contact__title">Contacto</h2>
+        <p class="footer-contact__paragraph">nahuelrodriguezsp@gmail.com</p>
+        <p class="footer-contact__paragraph">Buenos Aires, Argentina</p>
+      </div>
+
+      <div class="footer-links">
+        <h2 class="footer-links__title">Menú</h2>
+        <a class="footer-links__link" href="#">Inicio</a>
+        <a class="footer-links__link" href="#">Sobre mi</a>
+        <a class="footer-links__link" href="#">Porfolio</a>
+        <a class="footer-links__link" href="#">Contacto</a>
+      </div>
+
+      <div class="footer-media">
+        <a href="#" class="footer-media__link">
+          <img class="footer-media__image" src="./assets/linkedin.svg" alt="Linkedin" />
+        </a>
+        <a href="#" class="footer-media__link">
+          <img class="footer-media__image" src="./assets/github.svg" alt="linkedin" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Copyright -->
+  <div class="copyright">
+    <p>© 2023 | Todos los derechos reservados</p>
+  </div>
+</body>
+
+</html>

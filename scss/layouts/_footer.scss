@@ -1,0 +1,73 @@
+.footer {
+  background-color: $bg-secondary-color;
+  height: 12rem;
+  @include flex(flex, row, nowrap, space-between, center);
+
+  .container {
+    @include flex(flex, row, nowrap, space-between, center);
+    margin: 0 auto;
+    max-width: $max-width;
+    width: 100%;
+  }
+
+  &-role {
+    &__title {
+      color: $primary-color;
+      font-size: $font-size-lg;
+    }
+
+    &__subtitle{
+      color: $text-color;
+      font-size: $font-size-lg;
+    }
+  }
+
+  &-contact {
+    &__title {
+      font-size: $font-size-md;
+      color: $text-color;
+      margin-bottom: 1rem;
+    }
+
+    &__paragraph{
+      font-size: $font-size-sm;
+      color: $text-color;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-links{
+    @include flex(flex, column, nowrap, space-between, flex-start);
+    
+    
+    &__title {
+      color: $text-color;
+      margin-bottom: 1rem;
+    }
+
+    &__link{
+      margin-top: .5rem;
+      color: $text-color;
+    }
+  }
+
+  &-media {
+    @include flex(flex, row, nowrap, space-between, flex-start);
+    gap: 30px;
+    &__image {
+      width: 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    background-color: $bg-secondary-color;
+  
+    .container {
+      @include flex(flex, column, nowrap, space-between, flex-start);
+      margin: 0 auto;
+      max-width: $max-width;
+    }
+  }
+}

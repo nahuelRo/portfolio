@@ -1,0 +1,39 @@
+.about {
+  max-width: $max-width;
+  margin: 0 auto;
+  margin-top: 12rem;
+  @include flex(flex, row, nowrap, space-between, center);
+
+  &__image {
+    width: 40%;
+    height: auto;
+    padding-bottom: 12rem;
+  }
+
+  &__paragraph {
+    padding-bottom: 12rem;
+    height: 100%;
+    width: 50%;
+    color: $text-color;
+    font-size: $font-size-base;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about {
+    margin-top: 8rem;
+    @include flex(flex, column, nowrap, center, center);
+
+    &__image {
+      width: 90%;
+      height: auto;
+    }
+
+    &__paragraph {
+      margin-top: 2rem;
+      width: 100%;
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.logo {
+  color: $text-color;
+  font-size: $font-size-md;
+  font-weight: bold;
+  height: 4rem;
+  @include flex(flex, row, nowrap, center, center);
+  gap: 5px;
+
+
+  &__span {
+    color: $primary-color;
+    font-weight: bold;
+  }
+}

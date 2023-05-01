@@ -1,0 +1,50 @@
+body {
+  font-family: 'Roboto Serif', serif;
+  background-color: $bg-primary-color;
+}
+
+input {
+  font-family: 'Roboto Serif', serif;
+}
+
+textarea {
+  font-family: 'Roboto Serif', serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.section {
+  width: 100%;
+  background-color: $bg-secondary-color;
+}
+
+.section--bg {
+  background-color: $bg-primary-color;
+}
+
+.title {
+  padding-top: 5rem;
+  color: $text-color;
+  font-weight: bold;
+  font-size: $font-size-lg;
+  text-align: center;
+}
+
+.separator {
+  margin-top: 1rem;
+  position: absolute;
+  right: 0;
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+  width: 55%;
+
+  &--left {
+    right: auto;
+    left: 0;
+    width: 69%
+  }
+}

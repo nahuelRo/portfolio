@@ -1,0 +1,82 @@
+.contact {
+  max-width: $max-width;
+  height: 60vh;
+  margin: 4rem auto;
+  @include flex(flex, row, nowrap, space-between, center);
+
+  &-information {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: -35px;
+    @include flex(flex, column, nowrap, center, flex-start);
+    gap: 70px;
+
+    &__link{
+      color: $text-color;
+      font-size: $font-size-base;
+   
+
+      i {
+        color: $primary-color;
+        margin-right: 2rem;
+      }
+    }
+  }
+
+  &__form {
+    width: 50%;
+    height: 100%;
+    @include flex(flex, column, nowrap, center, center);
+    gap: 20px;
+
+    &__top {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__name {
+      width: 49%;
+      color: $text-color;
+      border: solid 2px $text-color;
+      border-radius: 5px;
+      background-color: transparent;
+      padding: 15px 20px;
+    }
+
+    &__email {
+      width: 50%;
+      color: $text-color;
+      border: solid 2px $text-color;
+      border-radius: 5px;
+      background-color: transparent;
+      padding: 15px 20px;
+    }
+
+    &__asunto {
+      color: $text-color;
+      border: solid 2px $text-color;
+      border-radius: 5px;
+      background-color: transparent;
+      width: 100%;
+      padding: 15px 20px;
+    }
+
+    &__textarea {
+      color: $text-color;
+      border: solid 2px $text-color;
+      border-radius: 5px;
+      background-color: transparent;
+      width: 100%;
+      padding: 15px 20px;
+    }
+  }
+
+  .button {
+    color: $text-color;
+    border: solid 2px $primary-color;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 15px 20px;
+  }
+}
