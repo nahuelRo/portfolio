@@ -2,6 +2,6 @@ import { hamburgerNav } from "./js/hamburgerNav.js";
 
 const d = document;
 
-d.addEventListener("click", (e) => {
-  hamburgerNav(".hamburger", ".nav");
-})
+d.addEventListener("DOMContentLoaded", (e) => {
+  hamburgerNav(".hamburger", ".nav", ".nav ul", ".nav ul a", ".hamburger span");
+});
