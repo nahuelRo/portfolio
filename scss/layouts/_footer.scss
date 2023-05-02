@@ -5,6 +5,7 @@
 
   .container {
     @include flex(flex, row, nowrap, space-between, center);
+    padding-left: 2rem;
     margin: 0 auto;
     max-width: $max-width;
     width: 100%;
@@ -70,7 +71,6 @@
     .container {
       @include flex(flex, column, nowrap, space-evenly, flex-start);
       margin: 0 auto;
-      margin-left: 2rem;
       height: 100%;
       max-width: 100%;
     }
