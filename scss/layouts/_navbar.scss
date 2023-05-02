@@ -1,9 +1,4 @@
 .header { 
-  z-index: 1;
-  position: relative;
-  top: 10px;
-  right: 0;
-  left: 0;
   background-color: $bg-primary-color;
   max-width: $max-width;
   margin: 0 auto;
@@ -39,7 +34,8 @@
   }
 
   .header {
-    max-width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
   }
 
   .nav {  

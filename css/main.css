@@ -208,11 +208,6 @@ textarea {
 }
 
 .header {
-  z-index: 1;
-  position: relative;
-  top: 10px;
-  right: 0;
-  left: 0;
   background-color: #171717;
   max-width: 1200px;
   margin: 0 auto;
@@ -250,6 +245,7 @@ textarea {
   }
   .header {
     max-width: 95%;
+    margin: 0 auto;
   }
   .nav {
     display: none !important;
@@ -808,6 +804,7 @@ textarea {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  margin-left: 10px;
 }
 .logo__span {
   color: #ee6c4d;

@@ -5,6 +5,7 @@
   height: 4rem;
   @include flex(flex, row, nowrap, center, center);
   gap: 5px;
+  margin-left: 10px;
 
 
   &__span {
