@@ -19,8 +19,6 @@ $text-color-bold: #fff;
 $max-width: 1200px;
 
 // Breakpoints
-$grid-breakpoints: (
-  'sm': (min-width: 576px),
-  'lg': (min-width: 992px),
-  'xl': (min-width:1200px),
-);
+$breakpoints-sm: 576px;
+$breakpoints-lg: 992px;
+$breakpoints-xl: 1200px;

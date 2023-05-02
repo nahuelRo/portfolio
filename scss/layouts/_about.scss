@@ -20,10 +20,10 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $breakpoints-sm) {
   .about {
     margin-top: 8rem;
-    @include flex(flex, column, nowrap, center, center);
+    @include flex(flex, column-reverse, nowrap, center, center);
 
     &__image {
       width: 90%;

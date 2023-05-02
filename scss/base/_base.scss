@@ -1,3 +1,8 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto Serif', serif;
   background-color: $bg-primary-color;
@@ -40,11 +45,28 @@ textarea {
   right: 0;
   border: 2px solid $primary-color;
   border-radius: 5px;
-  width: 55%;
 
-  &--left {
+  &--about {
     right: auto;
     left: 0;
-    width: 69%
+    width: 55%
+  }
+
+  &--skills {
+    right: 0;
+    left: auto;
+    width: 64%
+  }
+
+  &--portfolio {
+    right: auto;
+    left: 0;
+    width: 55%
+  }
+
+  &--contact {
+    right: 0;
+    left: auto;
+    width: 55%
   }
 }

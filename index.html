@@ -43,16 +43,16 @@
           <a class="nav-container__link active" href="index.html#home">Inicio</a>
         </li>
         <li class="nav-container__item">
-          <a class="nav-container__link" href="#">Sobre mi</a>
+          <a class="nav-container__link" href="index.html#about">Sobre mi</a>
         </li>
         <li class="nav-container__item">
-          <a class="nav-container__link" href="#">Habilidades</a>
+          <a class="nav-container__link" href="index.html#skills">Habilidades</a>
         </li>
         <li class="nav-container__item">
-          <a class="nav-container__link" href="#">Proyectos</a>
+          <a class="nav-container__link" href="index.html#portfolio">Proyectos</a>
         </li>
         <li class="nav-container__item">
-          <a class="nav-container__link" href="#">Contacto</a>
+          <a class="nav-container__link" href="index.html#contact">Contacto</a>
         </li>
       </ul>
     </nav>
@@ -69,8 +69,8 @@
       </p>
 
       <div class="buttons">
-        <a class="buttons__button button--variant" href="#">Contactame</a>
-        <a class="buttons__button" href="#">Portfolio <i class="fa-solid fa-angles-down"></i></a>
+        <a class="button button--variant" href="index.html#contact">Contactame</a>
+        <a class="button" href="index.html#portfolio">Portfolio <i class="fa-solid fa-angles-down"></i></a>
       </div>
     </div>
     <img class="img" src="./assets/foto-principal.png" alt="Imagen de mi rostro" />
@@ -81,9 +81,9 @@
   </div>
 
   <!-- About -->
-  <section class="section">
+  <section class="section" id="about">
     <h2 class="title">Sobre mí</h2>
-    <hr class="separator" />
+    <hr class="separator separator--about" />
     <div class="about">
       <img class="about__image" src="./assets/Imagen principal.svg" alt="Ilustración" />
       <p class="about__paragraph">
@@ -102,65 +102,65 @@
   </section>
 
   <!-- Skills and Tools -->
-  <section class="section section--bg">
+  <section class="section section--bg" id="skills">
     <h2 class="title">Habilidades y herramientas</h2>
-    <hr class="separator separator--left" />
+    <hr class="separator separator--skills" />
     <div class="grid-skills">
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/react.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/react.svg" alt="React" />
         <h4 class="grid-skills-card__title">React</h4>
       </div>
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/html.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/html.svg" alt="React" />
         <h4 class="grid-skills-card__title">HTML</h4>
       </div>
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/css.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/css.svg" alt="React" />
         <h4 class="grid-skills-card__title">CSS</h4>
       </div>
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/figma.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/figma.svg" alt="React" />
         <h4 class="grid-skills-card__title">Figma</h4>
       </div>
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/javascript.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/javascript.svg" alt="React" />
         <h4 class="grid-skills-card__title">JavaScript</h4>
       </div>
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/nodejs.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/nodejs.svg" alt="React" />
         <h4 class="grid-skills-card__title">NodeJS</h4>
       </div>
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/git.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/git.svg" alt="React" />
         <h4 class="grid-skills-card__title">Git</h4>
       </div>
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/visual-studio-code.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/visual-studio-code.svg" alt="React" />
         <h4 class="grid-skills-card__title">VSCode</h4>
       </div>
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/sass.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/sass.svg" alt="React" />
         <h4 class="grid-skills-card__title">Sass</h4>
       </div>
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/github.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/github.svg" alt="React" />
         <h4 class="grid-skills-card__title">Github</h4>
       </div>
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/bootstrap.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/bootstrap.svg" alt="React" />
         <h4 class="grid-skills-card__title">Bootstrap</h4>
       </div>
       <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/npm.svg" alt="React" />
+        <img class="grid-skills-card__image" src="./assets/icons/npm.svg" alt="React" />
         <h4 class="grid-skills-card__title">NPM</h4>
       </div>
     </div>
   </section>
 
   <!-- Portfolio -->
-  <section class="section">
+  <section class="section" id="portfolio">
     <h2 class="title">Portfolio</h2>
-    <hr class="separator" />
+    <hr class="separator separator--portfolio" />
     <div class="portfolio">
       <p class="portfolio__paragraph">
         Algunos de los proyectos en los que he trabajado
@@ -168,14 +168,14 @@
 
       <!-- CARD 1 -->
       <div class="card">
-        <img class="card__image" src="./assets/card-1.jpg" alt="Card 1" />
+        <img class="card__image" src="./assets/card-1.webp" alt="Card 1" />
         <div class="card__text">
           <div class="card__top">
             <h2 class="card__top__title">PROYECTO I</h2>
             <div class="card__top__skills">
-              <img class="card__top__image" src="./assets/react.svg" alt="React">
-              <img class="card__top__image" src="./assets/react.svg" alt="React">
-              <img class="card__top__image" src="./assets/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/icons/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/icons/html.svg" alt="HTML">
+              <img class="card__top__image" src="./assets/icons/sass.svg" alt="Sass">
             </div>
           </div>
           <h3 class="card__title">Ecommerse web app</h3>
@@ -186,22 +186,22 @@
             libro de textos especimen. No sólo sobrevivió 500 años
           </p>
           <div class="card__buttons">
-            <a class="button" href="#">Ver</a>
-            <a class="button" href="#">Code</a>
+            <a class="button button--variant" href="#">Ver</a>
+            <a class="button button--variant" href="#">Code</a>
           </div>
         </div>
       </div>
 
       <!-- CARD 2 -->
       <div class="card card--reverse">
-        <img class="card__image" src="./assets/card-2.jpg" alt="Card 2" />
+        <img class="card__image" src="./assets/card-2.webp" alt="Card 2" />
         <div class="card__text card--reverse__text ">
           <div class="card__top">
             <h2 class="card__top__title">PROYECTO II</h2>
             <div class="card__top__skills">
-              <img class="card__top__image" src="./assets/react.svg" alt="React">
-              <img class="card__top__image" src="./assets/react.svg" alt="React">
-              <img class="card__top__image" src="./assets/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/icons/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/icons/html.svg" alt="HTML">
+              <img class="card__top__image" src="./assets/icons/sass.svg" alt="Sass">
             </div>
           </div>
           <h3 class="card__title">Ecommerse web app</h3>
@@ -212,8 +212,8 @@
             libro de textos especimen. No sólo sobrevivió 500 años
           </p>
           <div class="card__buttons">
-            <a class="button" href="#">Ver</a>
-            <a class="button" href="#">Code</a>
+            <a class="button button--variant" href="#">Ver</a>
+            <a class="button button--variant" href="#">Code</a>
           </div>
         </div>
       </div>
@@ -225,9 +225,9 @@
           <div class="card__top">
             <h2 class="card__top__title">PROYECTO III</h2>
             <div class="card__top__skills">
-              <img class="card__top__image" src="./assets/react.svg" alt="React">
-              <img class="card__top__image" src="./assets/react.svg" alt="React">
-              <img class="card__top__image" src="./assets/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/icons/react.svg" alt="React">
+              <img class="card__top__image" src="./assets/icons/html.svg" alt="HTML">
+              <img class="card__top__image" src="./assets/icons/sass.svg" alt="Sass">
             </div>
           </div>
           <h3 class="card__title">Ecommerse web app</h3>
@@ -238,8 +238,8 @@
             libro de textos especimen. No sólo sobrevivió 500 años
           </p>
           <div class="card__buttons">
-            <a class="button" href="#">Ver</a>
-            <a class="button" href="#">Code</a>
+            <a class="button button--variant" href="#">Ver</a>
+            <a class="button button--variant" href="#">Code</a>
           </div>
         </div>
       </div>
@@ -247,25 +247,26 @@
   </section>
 
   <!-- Contact -->
-  <section class="section section--bg">
+  <section class="section section--bg" id="contact">
     <h2 class="title">Contacto</h2>
-    <hr class="separator separator--left" />
+    <hr class="separator separator--contact" />
 
     <div class="contact">
       <div class="contact-information">
-        <a class="contact-information__link" href="#">
+        <a class="contact-information__link" href="mailto:nahuelr.developer@gmail.com" target="_blank">
           <i class="fa-solid fa-envelope fa-xl"></i>
           nahuelr.developer@gmail.com
         </a>
-        <a class="contact-information__link" href="#">
+        <a class="contact-information__link" href="https://wa.me/+543329508094" target="_blank">
           <i class="fa-solid fa-square-phone fa-xl"></i>
           +54 3329 508094
         </a>
-        <a class="contact-information__link" href="#">
+        <a class="contact-information__link" href="https://www.linkedin.com/in/nahuel-rodriguez-514775203/"
+          target="_blank">
           <i class="fa-brands fa-linkedin fa-xl"></i>
           Nahuel Rodriguez
         </a>
-        <a class="contact-information__link" href="#">
+        <a class="contact-information__link" href="https://github.com/nahuelRo" target="_blank">
           <i class="fa-brands fa-github fa-xl"></i>
           Nahuel Rodriguez
         </a>
@@ -280,7 +281,7 @@
         <textarea class="contact__form__textarea" name="mensaje" id="" cols="30" rows="10"
           placeholder="Mensaje"></textarea>
 
-        <input class="button" type="submit" value="Enviar">
+        <input class="button button--variant" type="submit" value="Enviar">
 
       </form>
     </div>
@@ -303,18 +304,19 @@
 
       <div class="footer-links">
         <h2 class="footer-links__title">Menú</h2>
-        <a class="footer-links__link" href="#">Inicio</a>
-        <a class="footer-links__link" href="#">Sobre mi</a>
-        <a class="footer-links__link" href="#">Porfolio</a>
-        <a class="footer-links__link" href="#">Contacto</a>
+        <a class="footer-links__link" href="index.html#home">Inicio</a>
+        <a class="footer-links__link" href="index.html#about">Sobre mi</a>
+        <a class="footer-links__link" href="index.html#skills">Habilidades</a>
+        <a class="footer-links__link" href="index.html#portfolio">Porfolio</a>
+        <a class="footer-links__link" href="index.html#contact">Contacto</a>
       </div>
 
       <div class="footer-media">
         <a href="#" class="footer-media__link">
-          <img class="footer-media__image" src="./assets/linkedin.svg" alt="Linkedin" />
+          <img class="footer-media__image" src="./assets/icons/linkedin.svg" alt="Linkedin" />
         </a>
         <a href="#" class="footer-media__link">
-          <img class="footer-media__image" src="./assets/github.svg" alt="linkedin" />
+          <img class="footer-media__image" src="./assets/icons/github.svg" alt="linkedin" />
         </a>
       </div>
     </div>

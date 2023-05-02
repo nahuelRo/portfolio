@@ -130,6 +130,11 @@ table {
   border-spacing: 0;
 }
 
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto Serif", serif;
   background-color: #171717;
@@ -172,12 +177,26 @@ textarea {
   right: 0;
   border: 2px solid #ee6c4d;
   border-radius: 5px;
-  width: 55%;
 }
-.separator--left {
+.separator--about {
   right: auto;
   left: 0;
-  width: 69%;
+  width: 55%;
+}
+.separator--skills {
+  right: 0;
+  left: auto;
+  width: 64%;
+}
+.separator--portfolio {
+  right: auto;
+  left: 0;
+  width: 55%;
+}
+.separator--contact {
+  right: 0;
+  left: auto;
+  width: 55%;
 }
 
 .header {
@@ -217,7 +236,7 @@ textarea {
   color: #ee6c4d;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 576px) {
   .hamburger {
     display: block;
   }
@@ -282,23 +301,13 @@ textarea {
   margin-top: 3rem;
   gap: 2px;
 }
-.buttons__button {
-  color: #eee;
-  padding: 10px 20px;
-}
-
-.button--variant {
-  border: solid 2px #ee6c4d;
-  border-radius: 10px;
-  padding: 15px 20px;
-}
 
 .img {
   max-width: 100%;
   height: auto;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 576px) {
   .main {
     display: flex;
     flex-flow: column-reverse nowrap;
@@ -339,11 +348,11 @@ textarea {
   line-height: 2rem;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 576px) {
   .about {
     margin-top: 8rem;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column-reverse nowrap;
     justify-content: center;
     align-items: center;
   }
@@ -439,12 +448,6 @@ textarea {
   align-items: center;
   gap: 20px;
 }
-.portfolio .card .button {
-  color: #eee;
-  border: solid 2px #ee6c4d;
-  border-radius: 10px;
-  padding: 15px 20px;
-}
 .portfolio .card__top {
   width: 100%;
   display: flex;
@@ -478,9 +481,72 @@ textarea {
   margin-right: 1.5rem;
 }
 
+@media screen and (max-width: 576px) {
+  .portfolio {
+    max-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .portfolio__paragraph {
+    text-align: center;
+  }
+  .portfolio .card {
+    max-width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio .card__image {
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .portfolio .card__text {
+    position: relative;
+    margin-top: 2rem;
+    width: 90%;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .portfolio .card__buttons {
+    margin-top: 2rem;
+    position: static;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+  .portfolio .card__top__skills {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .portfolio .card__top__image {
+    width: 20px;
+    height: auto;
+  }
+  .portfolio .card--reverse {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio .card--reverse__text {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
 .contact {
   max-width: 1200px;
-  height: 60vh;
+  height: 80vh;
   margin: 4rem auto;
   display: flex;
   flex-flow: row nowrap;
@@ -551,14 +617,82 @@ textarea {
   width: 100%;
   padding: 15px 20px;
 }
-.contact .button {
-  color: #eee;
-  border: solid 2px #ee6c4d;
-  background-color: transparent;
-  border-radius: 10px;
-  padding: 15px 20px;
-}
 
+@media screen and (max-width: 576px) {
+  .contact {
+    max-width: 100%;
+    height: 100vh;
+    margin: 6rem auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact-information {
+    width: 80%;
+    margin: 0 auto;
+    position: static;
+    top: 0px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+  }
+  .contact-information__link {
+    color: #eee;
+    font-size: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  }
+  .contact-information__link i {
+    color: #ee6c4d;
+    margin-right: 2rem;
+  }
+  .contact__form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .contact__form__top {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .contact__form__name {
+    width: 48%;
+    color: #eee;
+    border: solid 2px #eee;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 15px 20px;
+  }
+  .contact__form__email {
+    width: 50%;
+    color: #eee;
+    border: solid 2px #eee;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 15px 20px;
+  }
+  .contact__form__asunto {
+    color: #eee;
+    border: solid 2px #eee;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 100%;
+    padding: 15px 20px;
+  }
+  .contact__form__textarea {
+    color: #eee;
+    border: solid 2px #eee;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 100%;
+    padding: 15px 20px;
+  }
+}
 .footer {
   background-color: #1b1b1b;
   height: 12rem;
@@ -619,17 +753,34 @@ textarea {
   width: 60px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 576px) {
   .footer {
     background-color: #1b1b1b;
+    height: 80vh;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
   .footer .container {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     margin: 0 auto;
-    max-width: 1200px;
+    margin-left: 2rem;
+    height: 100%;
+    max-width: 100%;
+  }
+  .footer-media {
+    gap: 20px;
+  }
+  .footer-media__image {
+    width: 50px;
+  }
+  .footer-links {
+    gap: 20px;
   }
 }
 .copyright {
@@ -678,4 +829,15 @@ textarea {
   margin-top: -3rem;
   font-size: 50px;
   color: #eee;
+}
+
+.button {
+  color: #eee;
+  padding: 10px 20px;
+}
+.button--variant {
+  border: solid 2px #ee6c4d;
+  border-radius: 10px;
+  padding: 15px 20px;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */

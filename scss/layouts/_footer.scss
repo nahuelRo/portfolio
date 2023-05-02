@@ -60,14 +60,30 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $breakpoints-sm) {
   .footer {
     background-color: $bg-secondary-color;
+    height: 80vh;
+    max-width: 100%;
+    @include flex(flex, column, nowrap, space-between, center);
   
     .container {
-      @include flex(flex, column, nowrap, space-between, flex-start);
+      @include flex(flex, column, nowrap, space-evenly, flex-start);
       margin: 0 auto;
-      max-width: $max-width;
+      margin-left: 2rem;
+      height: 100%;
+      max-width: 100%;
+    }
+
+    &-media {
+      gap: 20px;
+      &__image {
+        width: 50px;
+      }
+    }
+
+    &-links{
+      gap: 20px;
     }
   }
 }
