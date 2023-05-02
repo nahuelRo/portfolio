@@ -208,6 +208,11 @@ textarea {
 .header {
   background-color: #171717;
   max-width: 1200px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 10px;
   margin: 0 auto;
   height: 4rem;
   display: flex;
@@ -242,7 +247,9 @@ textarea {
     display: block;
   }
   .header {
-    max-width: 95%;
+    position: fixed;
+    top: 0px;
+    max-width: 100%;
     margin: 0 auto;
   }
   .nav {
@@ -266,7 +273,10 @@ textarea {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(23, 23, 23, 0.5843137255);
+    background-color: #171717;
+  }
+  .nav.active {
+    display: block !important;
   }
 }
 .main {
@@ -313,7 +323,7 @@ textarea {
   .main {
     display: flex;
     flex-flow: column-reverse nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   .text {
@@ -322,8 +332,8 @@ textarea {
     text-align: center;
   }
   .img {
-    margin-top: 5rem;
-    max-width: 100%;
+    margin-top: 4rem;
+    width: 80%;
     height: auto;
   }
 }
@@ -631,7 +641,7 @@ textarea {
     align-items: center;
   }
   .contact-information {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     position: static;
     top: 0px;
@@ -650,7 +660,7 @@ textarea {
     margin-right: 2rem;
   }
   .contact__form {
-    width: 100%;
+    width: 95%;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -759,7 +769,7 @@ textarea {
 @media screen and (max-width: 576px) {
   .footer {
     background-color: #1b1b1b;
-    height: 80vh;
+    height: 100vh;
     max-width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -820,6 +830,12 @@ textarea {
 }
 .hamburger-inner::after {
   background-color: white;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+  background-color: #eee;
 }
 
 @media screen and (max-width: 992px) {

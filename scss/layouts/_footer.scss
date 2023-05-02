@@ -64,7 +64,7 @@
 @media screen and (max-width: $breakpoints-sm) {
   .footer {
     background-color: $bg-secondary-color;
-    height: 80vh;
+    height: 100vh;
     max-width: 100%;
     @include flex(flex, column, nowrap, space-between, center);
   

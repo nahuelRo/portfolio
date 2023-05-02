@@ -81,7 +81,7 @@
     @include flex(flex, column, nowrap, space-between, center);
 
     &-information {
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
       position: static;
       top: 0px;
@@ -100,7 +100,7 @@
     }
 
     &__form {
-      width: 100%;
+      width: 95%;
       height: 100%;
       @include flex(flex, column, nowrap, center, center);
       gap: 20px;

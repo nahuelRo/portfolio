@@ -14,7 +14,13 @@
   }
 }
 
-@media screen and (max-width: 992px)  {
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+  background-color: $text-color;
+}
+
+@media screen and (max-width: 992px) {
   .hamburger {
     display: block;
   }

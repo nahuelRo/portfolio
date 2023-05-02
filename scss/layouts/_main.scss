@@ -41,7 +41,7 @@
 
 @media screen and (max-width: $breakpoints-sm)  {
   .main {
-    @include flex(flex, column-reverse, nowrap, space-between, center);
+    @include flex(flex, column-reverse, nowrap, space-around, center);
   }
 
   .text {
@@ -51,8 +51,8 @@
   }
 
   .img {
-    margin-top: 5rem;
-    max-width: 100%;
+    margin-top: 4rem;
+    width: 80%;
     height: auto;
   }
 }
