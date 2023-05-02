@@ -131,13 +131,21 @@ table {
 }
 
 html {
-  overflow-x: hidden;
+  position: fixed;
+  height: 100%;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Roboto Serif", serif;
   background-color: #171717;
+  margin: 0;
+  width: 100vw;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 input {
