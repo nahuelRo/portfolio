@@ -1,6 +1,7 @@
 .button {
   color: $text-color;
   padding: 10px 20px;
+  cursor: pointer;
 
   &--variant {
     border: solid 2px $primary-color;

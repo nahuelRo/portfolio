@@ -22,3 +22,9 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoints-lg) {
+  .grid-skills {
+    width: 100%;
+  }
+}

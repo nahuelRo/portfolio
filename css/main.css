@@ -406,6 +406,11 @@ textarea {
   color: #eee;
 }
 
+@media screen and (max-width: 992px) {
+  .grid-skills {
+    width: 100%;
+  }
+}
 .portfolio {
   margin: 0 auto;
   max-width: 1200px;
@@ -853,6 +858,7 @@ textarea {
 .button {
   color: #eee;
   padding: 10px 20px;
+  cursor: pointer;
 }
 .button--variant {
   border: solid 2px #ee6c4d;
