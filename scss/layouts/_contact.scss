@@ -73,7 +73,7 @@
   }
 }
 
-@media screen and (max-width: $breakpoints-sm) {
+@media screen and (max-width: $breakpoints-lg) {
   .contact {
     max-width: 100%;
     height: 100vh;
@@ -100,6 +100,7 @@
     }
 
     &__form {
+      margin-top: 5rem;
       width: 95%;
       height: 100%;
       @include flex(flex, column, nowrap, center, center);
@@ -111,18 +112,18 @@
       }
   
       &__name {
-        width: 48%;
+        width: 49%;
         color: $text-color;
-        border: solid 2px $text-color;
+        border: solid 1px $text-color;
         border-radius: 5px;
         background-color: transparent;
         padding: 15px 20px;
       }
   
       &__email {
-        width: 50%;
+        width: 49.5%;
         color: $text-color;
-        border: solid 2px $text-color;
+        border: solid 1px $text-color;
         border-radius: 5px;
         background-color: transparent;
         padding: 15px 20px;

@@ -242,7 +242,7 @@ textarea {
   color: #ee6c4d;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .hamburger {
     display: block;
   }
@@ -319,7 +319,7 @@ textarea {
   height: auto;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .main {
     display: flex;
     flex-flow: column-reverse nowrap;
@@ -360,7 +360,7 @@ textarea {
   line-height: 2rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .about {
     margin-top: 8rem;
     display: flex;
@@ -374,7 +374,7 @@ textarea {
   }
   .about__paragraph {
     margin-top: 2rem;
-    width: 100%;
+    width: 95%;
     text-align: left;
   }
 }
@@ -498,7 +498,7 @@ textarea {
   margin-right: 1.5rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .portfolio {
     max-width: 100%;
     display: flex;
@@ -635,7 +635,7 @@ textarea {
   padding: 15px 20px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .contact {
     max-width: 100%;
     height: 100vh;
@@ -665,6 +665,7 @@ textarea {
     margin-right: 2rem;
   }
   .contact__form {
+    margin-top: 5rem;
     width: 95%;
     height: 100%;
     display: flex;
@@ -678,17 +679,17 @@ textarea {
     margin: 0 auto;
   }
   .contact__form__name {
-    width: 48%;
+    width: 49%;
     color: #eee;
-    border: solid 2px #eee;
+    border: solid 1px #eee;
     border-radius: 5px;
     background-color: transparent;
     padding: 15px 20px;
   }
   .contact__form__email {
-    width: 50%;
+    width: 49.5%;
     color: #eee;
-    border: solid 2px #eee;
+    border: solid 1px #eee;
     border-radius: 5px;
     background-color: transparent;
     padding: 15px 20px;
@@ -771,7 +772,7 @@ textarea {
   width: 60px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .footer {
     background-color: #1b1b1b;
     height: 100vh;

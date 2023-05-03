@@ -81,7 +81,7 @@
   }
 }
 
-@media screen and (max-width: $breakpoints-sm) {
+@media screen and (max-width: $breakpoints-lg) {
   .portfolio {
     max-width: 100%;
     @include flex(flex, column, nowrap, center, center);

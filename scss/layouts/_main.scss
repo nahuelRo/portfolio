@@ -39,9 +39,10 @@
   height: auto;
 }
 
-@media screen and (max-width: $breakpoints-sm)  {
+@media screen and (max-width: $breakpoints-lg)  {
   .main {
     @include flex(flex, column-reverse, nowrap, space-around, center);
+    
   }
 
   .text {

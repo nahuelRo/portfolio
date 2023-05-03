@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: $breakpoints-sm) {
+@media screen and (max-width: $breakpoints-lg) {
   .about {
     margin-top: 8rem;
     @include flex(flex, column-reverse, nowrap, center, center);
@@ -32,7 +32,7 @@
 
     &__paragraph {
       margin-top: 2rem;
-      width: 100%;
+      width: 95%;
       text-align: left;
     }
   }
