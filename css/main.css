@@ -865,4 +865,16 @@ textarea {
   border-radius: 10px;
   padding: 15px 20px;
   background-color: transparent;
+}
+.button--scroll {
+  position: fixed;
+  bottom: 3vh;
+  right: 6vw;
+  border: solid 2px #ee6c4d;
+  border-radius: 10px;
+  padding: 15px 20px;
+  background-color: transparent;
+}
+.button--scroll.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
