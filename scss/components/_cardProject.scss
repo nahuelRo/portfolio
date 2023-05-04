@@ -1,0 +1,68 @@
+.card {
+  margin: 0 auto;
+  max-width: 100%;
+  @include flex(flex, row, nowrap, center, center);
+
+  &__image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  &__text {
+    position: relative;
+    margin-left: 1.5rem;
+    height: 480px;
+    width: 50%;
+    
+  }
+
+  &__title {
+    margin-top: 0.5rem;
+    color: $text-color;
+    font-size: $font-size-lg;
+  }
+
+  &__paragraph {
+    margin-top: 2rem;
+    color: $text-color;
+    word-spacing: 0.5rem;
+    line-height: 2rem;
+  }
+
+  &__buttons {
+    position: absolute;
+    bottom: 30px;
+    @include flex(flex, row, nowrap, flex-start, center);
+    gap: 20px;
+  }
+
+  &__top {
+    width: 100%;
+    @include flex(flex, row, nowrap, space-between, center);
+
+    &__title {
+      color: $primary-color;
+      font-size: $font-size-lg;
+    }
+
+    &__skills {
+      @include flex(flex, row, nowrap, center, center);
+      gap: 20px;
+    }
+
+    &__image {
+      width: 30px;
+      height: auto;
+    }
+  }
+}
+
+.card--reverse{
+  @include flex(flex, row-reverse, nowrap, center, center);
+
+  &__text {
+    margin-left: 0rem;
+    margin-right: 1.5rem;
+  }
+}

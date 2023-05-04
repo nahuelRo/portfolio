@@ -27,32 +27,35 @@
 </head>
 
 <body>
-  <!-- Nav -->
+  <!-- Header -->
   <header class="header">
+    <!-- Logo -->
     <a class="logo" href="index.html#home">Nahuel <span class="logo__span">.</span></a>
 
+    <!-- Button hamburger -->
     <button class="hamburger hamburger--collapse" type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
     </button>
 
+    <!-- Navbar -->
     <nav class="nav">
-      <ul class="nav-container">
-        <li class="nav-container__item">
-          <a class="nav-container__link active" href="index.html#home">Inicio</a>
+      <ul class="nav__container">
+        <li class="nav__item">
+          <a class="nav__link active" href="index.html#home">Inicio</a>
         </li>
-        <li class="nav-container__item">
-          <a class="nav-container__link" href="index.html#about">Sobre mi</a>
+        <li class="nav__item">
+          <a class="nav__link" href="index.html#about">Sobre mi</a>
         </li>
-        <li class="nav-container__item">
-          <a class="nav-container__link" href="index.html#skills">Habilidades</a>
+        <li class="nav__item">
+          <a class="nav__link" href="index.html#skills">Habilidades</a>
         </li>
-        <li class="nav-container__item">
-          <a class="nav-container__link" href="index.html#portfolio">Proyectos</a>
+        <li class="nav__item">
+          <a class="nav__link" href="index.html#portfolio">Proyectos</a>
         </li>
-        <li class="nav-container__item">
-          <a class="nav-container__link" href="index.html#contact">Contacto</a>
+        <li class="nav__item">
+          <a class="nav__link" href="index.html#contact">Contacto</a>
         </li>
       </ul>
     </nav>
@@ -60,6 +63,7 @@
 
   <!-- Main -->
   <main class="main" id="home">
+    <!-- Text -->
     <div class="text">
       <h1 class="text__title">Nahuel Rodriguez</h1>
       <h2 class="text__subtitle">Frontend developer</h2>
@@ -67,23 +71,28 @@
         Desarrollador frontend especializado en crear experiencias de usuario
         atractivas y eficientes.
       </p>
-
       <div class="buttons">
         <a class="button button--variant" href="index.html#contact">Contactame</a>
         <a class="button" href="index.html#portfolio">Portfolio <i class="fa-solid fa-angles-down"></i></a>
       </div>
     </div>
+
+    <!-- Image -->
     <img class="img" src="./assets/foto-principal.png" alt="Imagen de mi rostro" />
   </main>
 
+  <!-- Scroll down -->
   <div class="scroll-down">
     <i class="fa-solid fa-angle-down"></i>
   </div>
 
   <!-- About -->
   <section class="section" id="about">
+    <!-- Title Separator -->
     <h2 class="title">Sobre mí</h2>
     <hr class="separator separator--about" />
+
+    <!-- About -->
     <div class="about">
       <img class="about__image" src="./assets/Imagen principal.svg" alt="Ilustración" />
       <p class="about__paragraph">
@@ -103,64 +112,70 @@
 
   <!-- Skills and Tools -->
   <section class="section section--bg" id="skills">
+    <!-- Title Separator -->
     <h2 class="title">Habilidades y herramientas</h2>
     <hr class="separator separator--skills" />
+
+    <!-- Grid Skills -->
     <div class="grid-skills">
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/react.svg" alt="React" />
-        <h4 class="grid-skills-card__title">React</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/react.svg" alt="React" />
+        <h4 class="card-skill__title">React</h4>
       </div>
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/html.svg" alt="React" />
-        <h4 class="grid-skills-card__title">HTML</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/html.svg" alt="React" />
+        <h4 class="card-skill__title">HTML</h4>
       </div>
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/css.svg" alt="React" />
-        <h4 class="grid-skills-card__title">CSS</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/css.svg" alt="React" />
+        <h4 class="card-skill__title">CSS</h4>
       </div>
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/figma.svg" alt="React" />
-        <h4 class="grid-skills-card__title">Figma</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/figma.svg" alt="React" />
+        <h4 class="card-skill__title">Figma</h4>
       </div>
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/javascript.svg" alt="React" />
-        <h4 class="grid-skills-card__title">JavaScript</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/javascript.svg" alt="React" />
+        <h4 class="card-skill__title">JavaScript</h4>
       </div>
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/nodejs.svg" alt="React" />
-        <h4 class="grid-skills-card__title">NodeJS</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/nodejs.svg" alt="React" />
+        <h4 class="card-skill__title">NodeJS</h4>
       </div>
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/git.svg" alt="React" />
-        <h4 class="grid-skills-card__title">Git</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/git.svg" alt="React" />
+        <h4 class="card-skill__title">Git</h4>
       </div>
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/visual-studio-code.svg" alt="React" />
-        <h4 class="grid-skills-card__title">VSCode</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/visual-studio-code.svg" alt="React" />
+        <h4 class="card-skill__title">VSCode</h4>
       </div>
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/sass.svg" alt="React" />
-        <h4 class="grid-skills-card__title">Sass</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/sass.svg" alt="React" />
+        <h4 class="card-skill__title">Sass</h4>
       </div>
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/github.svg" alt="React" />
-        <h4 class="grid-skills-card__title">Github</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/github.svg" alt="React" />
+        <h4 class="card-skill__title">Github</h4>
       </div>
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/bootstrap.svg" alt="React" />
-        <h4 class="grid-skills-card__title">Bootstrap</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/bootstrap.svg" alt="React" />
+        <h4 class="card-skill__title">Bootstrap</h4>
       </div>
-      <div class="grid-skills-card">
-        <img class="grid-skills-card__image" src="./assets/icons/npm.svg" alt="React" />
-        <h4 class="grid-skills-card__title">NPM</h4>
+      <div class="card-skill">
+        <img class="card-skill__image" src="./assets/icons/npm.svg" alt="React" />
+        <h4 class="card-skill__title">NPM</h4>
       </div>
     </div>
   </section>
 
   <!-- Portfolio -->
   <section class="section" id="portfolio">
+    <!-- Title Separator -->
     <h2 class="title">Portfolio</h2>
     <hr class="separator separator--portfolio" />
+
+    <!-- Portfolio -->
     <div class="portfolio">
       <p class="portfolio__paragraph">
         Algunos de los proyectos en los que he trabajado
@@ -248,9 +263,11 @@
 
   <!-- Contact -->
   <section class="section section--bg" id="contact">
+    <!-- Title Separator -->
     <h2 class="title">Contacto</h2>
     <hr class="separator separator--contact" />
 
+    <!-- Contact -->
     <div class="contact">
       <div class="contact-information">
         <a class="contact-information__link" href="mailto:nahuelr.developer@gmail.com" target="_blank">
@@ -272,6 +289,7 @@
         </a>
       </div>
 
+      <!-- Form -->
       <form class="contact__form">
         <div class="contact__form__top">
           <input class="contact__form__name" type="text" placeholder="Nombre">
@@ -286,7 +304,6 @@
       </form>
     </div>
   </section>
-
 
   <!-- Footer -->
   <footer class="footer">
@@ -330,7 +347,6 @@
   <!-- Button Scroll -->
   <button class="button button--scroll hidden fa-solid fa-angle-up"></button>
 
-
   <!-- Scroll reveal -->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
@@ -353,7 +369,7 @@
     ScrollReveal().reveal('.card', cardConfig);
     ScrollReveal().reveal('.card:nth-child(3)', cardConfig2);
 
-    ScrollReveal().reveal('.grid-skills-card', topConfig);
+    ScrollReveal().reveal('.card-skill', topConfig);
 
   </script>
   <!-- JavaScript -->

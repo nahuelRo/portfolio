@@ -1,0 +1,39 @@
+.title {
+  padding-top: 5rem;
+  color: $text-color;
+  font-weight: bold;
+  font-size: $font-size-lg;
+  text-align: center;
+}
+
+.separator {
+  margin-top: 1rem;
+  position: absolute;
+  right: 0;
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+
+  &--about {
+    right: auto;
+    left: 0;
+    width: 55%
+  }
+
+  &--skills {
+    right: 0;
+    left: auto;
+    width: 63%
+  }
+
+  &--portfolio {
+    right: auto;
+    left: 0;
+    width: 55%
+  }
+
+  &--contact {
+    right: 0;
+    left: auto;
+    width: 54%
+  }
+}

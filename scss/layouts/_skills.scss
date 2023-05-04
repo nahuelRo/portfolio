@@ -4,23 +4,6 @@
   @include flex(flex, row, wrap, center, center);
   gap: 30px;
   margin: 6rem auto;
-
-  &-card {
-    @include flex(flex, column, nowrap, space-evenly, center);
-    background-color: $bg-secondary-color;
-    min-width: 160px;
-    min-height: 180px;
-
-    &__image {
-      width: 60px;
-      height: auto;
-    }
-
-    &__title {
-      font-size: $font-size-base;
-      color: $text-color;
-    }
-  }
 }
 
 @media screen and (max-width: $breakpoints-lg) {
