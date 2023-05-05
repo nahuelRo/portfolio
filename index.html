@@ -290,13 +290,13 @@
       </div>
 
       <!-- Form -->
-      <form class="contact__form">
+      <form action="https://formspree.io/f/xdovbyng" method="POST" class="contact__form">
         <div class="contact__form__top">
           <input class="contact__form__name" type="text" placeholder="Nombre">
-          <input class="contact__form__email" type="text" placeholder="Email">
+          <input class="contact__form__email" type="email" name="email" placeholder="Email">
         </div>
         <input class="contact__form__asunto" type="text" placeholder="Asunto">
-        <textarea class="contact__form__textarea" name="mensaje" id="" cols="30" rows="10"
+        <textarea class="contact__form__textarea" name="message" id="" cols="30" rows="10"
           placeholder="Mensaje"></textarea>
 
         <input class="button button--variant" type="submit" value="Enviar">
