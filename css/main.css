@@ -589,7 +589,7 @@ textarea {
 }
 .footer {
   background-color: #1b1b1b;
-  height: 12rem;
+  height: 16rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;

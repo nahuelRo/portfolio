@@ -1,6 +1,6 @@
 .footer {
   background-color: $bg-secondary-color;
-  height: 12rem;
+  height: 16rem;
   @include flex(flex, row, nowrap, space-between, center);
 
   .container {
@@ -39,7 +39,6 @@
 
   &-links{
     @include flex(flex, column, nowrap, space-between, flex-start);
-    
     
     &__title {
       color: $text-color;
