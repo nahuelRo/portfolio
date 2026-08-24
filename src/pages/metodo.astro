@@ -1,0 +1,117 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import MethodHero from "../components/method/MethodHero.astro";
+import MethodProgress from "../components/method/MethodProgress.astro";
+import MethodScene from "../components/method/MethodScene.astro";
+import MethodClose from "../components/method/MethodClose.astro";
+import { methodPage, methodStages } from "../data/method";
+import "../styles/global.css";
+---
+
+<BaseLayout title={methodPage.title} description={methodPage.description}>
+  <Header />
+  <main id="contenido" data-method-page>
+    <MethodHero />
+    <MethodProgress stages={methodStages} />
+    {
+      methodStages.map((stage, index) => (
+        <MethodScene stage={stage} reverse={index % 2 === 1} />
+      ))
+    }
+    <MethodClose />
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style is:global>
+  .method-scene {
+    opacity: 0.45;
+    transform: translateY(18px);
+    transition:
+      opacity 0.55s ease,
+      transform 0.55s ease;
+  }
+
+  .method-scene.is-active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .method-scene.is-active .method-visual {
+    /* activates child animations that key off .is-active ancestor */
+  }
+
+  .method-progress-link.is-active {
+    border-color: var(--stroke);
+    background: color-mix(in oklab, var(--accent) 12%, var(--surface));
+    color: var(--fg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .method-scene {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  const page = document.querySelector("[data-method-page]");
+  if (page) {
+    const scenes = Array.from(
+      page.querySelectorAll<HTMLElement>("[data-method-scene]"),
+    );
+    const links = Array.from(
+      document.querySelectorAll<HTMLAnchorElement>("[data-progress-link]"),
+    );
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    const setActive = (id: string | null) => {
+      scenes.forEach((scene) => {
+        const active = scene.dataset.methodScene === id;
+        scene.classList.toggle("is-active", active || reduceMotion);
+        const visual = scene.querySelector(".method-visual");
+        visual?.classList.toggle("is-active", active || reduceMotion);
+      });
+      links.forEach((link) => {
+        link.classList.toggle(
+          "is-active",
+          link.dataset.progressLink === id,
+        );
+      });
+    };
+
+    if (scenes[0]) setActive(scenes[0].dataset.methodScene ?? null);
+
+    if (!reduceMotion && "IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+          if (visible) {
+            const id =
+              (visible.target as HTMLElement).dataset.methodScene ?? null;
+            setActive(id);
+          }
+        },
+        {
+          root: null,
+          threshold: [0.25, 0.45, 0.65],
+          rootMargin: "-20% 0px -35% 0px",
+        },
+      );
+      scenes.forEach((scene) => observer.observe(scene));
+    } else {
+      scenes.forEach((scene) => {
+        scene.classList.add("is-active");
+        scene.querySelector(".method-visual")?.classList.add("is-active");
+      });
+    }
+  }
+</script>

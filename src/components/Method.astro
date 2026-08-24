@@ -1,0 +1,27 @@
+---
+import { methodPage } from "../data/method";
+---
+
+<section
+  id="metodo"
+  class="section-y border-b border-line/50"
+  aria-labelledby="method-teaser-heading"
+>
+  <div class="mx-auto max-w-3xl px-5">
+    <h2
+      id="method-teaser-heading"
+      class="font-display text-sm font-semibold uppercase tracking-[0.18em] text-accent"
+    >
+      {methodPage.teaser.title}
+    </h2>
+    <p class="mt-4 max-w-2xl text-lg leading-relaxed text-cream/90">
+      {methodPage.teaser.body}
+    </p>
+    <a
+      href="/metodo"
+      class="mt-8 inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-accent-soft"
+    >
+      {methodPage.teaser.cta}
+    </a>
+  </div>
+</section>

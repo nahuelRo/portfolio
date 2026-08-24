@@ -26,6 +26,14 @@ import { site } from "../data/site";
         {site.email}
       </a>
       <a
+        href={site.cvUrl}
+        download={site.cvFilename}
+        type="application/pdf"
+        class="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-cream transition hover:border-accent hover:text-accent-soft"
+      >
+        Descargar CV
+      </a>
+      <a
         href={site.linkedin}
         target="_blank"
         rel="noopener noreferrer"

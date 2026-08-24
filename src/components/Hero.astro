@@ -5,22 +5,28 @@ import { site } from "../data/site";
 <section id="inicio" class="section-y border-b border-line/50">
   <div class="mx-auto max-w-3xl px-5">
     <div class="fade-up mb-8 flex items-center gap-5">
-      <div
-        class="flex h-20 w-20 shrink-0 items-center justify-center rounded-full border border-line bg-ink-elevated font-display text-xl font-semibold text-accent-soft"
-        aria-hidden="true"
-      >
-        NR
-      </div>
+      <img
+        src={site.avatar}
+        alt={site.avatarAlt}
+        width="80"
+        height="80"
+        class="h-20 w-20 shrink-0 rounded-full border border-line object-cover"
+      />
       <div>
         <p class="text-sm text-muted">{site.location}</p>
-        <h1 class="font-display mt-1 text-3xl font-semibold tracking-tight md:text-4xl">
+        <h1
+          class="font-display mt-1 text-3xl font-semibold tracking-tight md:text-4xl"
+        >
           {site.name}
         </h1>
         <p class="mt-1 text-lg text-accent-soft">{site.role}</p>
+        <p class="mt-1 text-sm text-muted">{site.availability}</p>
       </div>
     </div>
 
-    <p class="fade-up-delay max-w-2xl text-lg leading-relaxed text-cream/90 md:text-xl">
+    <p
+      class="fade-up-delay max-w-2xl text-lg leading-relaxed text-cream/90 md:text-xl"
+    >
       {site.tagline}
     </p>
 
@@ -30,6 +36,14 @@ import { site } from "../data/site";
         class="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-accent-soft"
       >
         Ver proyectos
+      </a>
+      <a
+        href={site.cvUrl}
+        download={site.cvFilename}
+        type="application/pdf"
+        class="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-cream transition hover:border-accent hover:text-accent-soft"
+      >
+        Descargar CV
       </a>
       <a
         href={site.linkedin}
@@ -46,12 +60,6 @@ import { site } from "../data/site";
         class="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-cream transition hover:border-accent hover:text-accent-soft"
       >
         GitHub
-      </a>
-      <a
-        href={`mailto:${site.email}`}
-        class="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-cream transition hover:border-accent hover:text-accent-soft"
-      >
-        Contacto
       </a>
     </div>
   </div>

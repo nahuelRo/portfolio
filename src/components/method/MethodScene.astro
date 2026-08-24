@@ -1,0 +1,46 @@
+---
+import type { MethodStage } from "../../data/method";
+import MethodVisual from "./MethodVisual.astro";
+
+interface Props {
+  stage: MethodStage;
+  reverse?: boolean;
+}
+
+const { stage, reverse = false } = Astro.props;
+---
+
+<section
+  id={stage.id}
+  class="method-scene border-b border-line/40 py-16 md:py-24"
+  data-method-scene={stage.id}
+  aria-labelledby={`${stage.id}-title`}
+>
+  <div
+    class:list={[
+      "mx-auto grid max-w-5xl items-center gap-10 px-5 md:grid-cols-2",
+      reverse && "md:[&>*:first-child]:order-2",
+    ]}
+  >
+    <div class="method-scene-copy">
+      <p class="font-display text-sm font-semibold text-accent">
+        {stage.number} · {stage.label}
+      </p>
+      <h2
+        id={`${stage.id}-title`}
+        class="font-display mt-3 text-2xl font-semibold tracking-tight md:text-3xl"
+      >
+        {stage.title}
+      </h2>
+      <p class="mt-4 text-base leading-relaxed text-cream/85 md:text-lg">
+        {stage.body}
+      </p>
+      <ul class="mt-6 space-y-2.5 text-sm leading-relaxed text-muted md:text-[0.95rem]">
+        {stage.points.map((point) => <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true"></span><span>{point}</span></li>)}
+      </ul>
+    </div>
+    <div class="method-scene-visual h-52 md:h-64">
+      <MethodVisual kind={stage.visual} />
+    </div>
+  </div>
+</section>

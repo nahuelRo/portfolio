@@ -2,10 +2,11 @@
 import { site } from "../data/site";
 
 const links = [
-  { href: "#experiencia", label: "Experiencia" },
-  { href: "#proyectos", label: "Proyectos" },
-  { href: "#skills", label: "Skills" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/metodo", label: "Método" },
+  { href: "/#experiencia", label: "Experiencia" },
+  { href: "/#proyectos", label: "Proyectos" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#contacto", label: "Contacto" },
 ];
 ---
 
@@ -13,10 +14,10 @@ const links = [
   class="sticky top-0 z-40 border-b border-line/60 bg-ink/80 backdrop-blur-md"
 >
   <div
-    class="mx-auto flex max-w-3xl items-center justify-between gap-4 px-5 py-4"
+    class="mx-auto flex max-w-3xl items-center justify-between gap-4 px-5 py-4 md:max-w-5xl"
   >
     <a
-      href="#inicio"
+      href="/"
       class="font-display text-sm font-semibold tracking-tight text-cream transition hover:text-accent-soft"
     >
       {site.name}
@@ -33,11 +34,65 @@ const links = [
         ))
       }
     </nav>
-    <a
-      href={`mailto:${site.email}`}
-      class="rounded-full border border-line px-3 py-1.5 text-xs font-medium text-cream transition hover:border-accent hover:text-accent-soft"
-    >
-      Email
-    </a>
+    <div class="flex items-center gap-2">
+      <button
+        type="button"
+        id="theme-toggle"
+        class="rounded-full border border-line px-3 py-1.5 text-xs font-medium text-cream transition hover:border-accent hover:text-accent-soft"
+        aria-pressed="false"
+        aria-label="Cambiar a modo claro"
+      >
+        Claro
+      </button>
+      <a
+        href={site.cvUrl}
+        download={site.cvFilename}
+        type="application/pdf"
+        class="rounded-full border border-line px-3 py-1.5 text-xs font-medium text-cream transition hover:border-accent hover:text-accent-soft"
+      >
+        CV
+      </a>
+      <a
+        href={`mailto:${site.email}`}
+        class="hidden rounded-full border border-line px-3 py-1.5 text-xs font-medium text-cream transition hover:border-accent hover:text-accent-soft sm:inline-flex"
+      >
+        Email
+      </a>
+    </div>
   </div>
 </header>
+
+<script>
+  const button = document.getElementById("theme-toggle");
+  if (button) {
+    const sync = () => {
+      const theme =
+        document.documentElement.getAttribute("data-theme") === "light"
+          ? "light"
+          : "dark";
+      const isLight = theme === "light";
+      button.setAttribute("aria-pressed", String(isLight));
+      button.setAttribute(
+        "aria-label",
+        isLight ? "Cambiar a modo oscuro" : "Cambiar a modo claro",
+      );
+      button.textContent = isLight ? "Oscuro" : "Claro";
+    };
+
+    sync();
+
+    button.addEventListener("click", () => {
+      const next =
+        document.documentElement.getAttribute("data-theme") === "light"
+          ? "dark"
+          : "light";
+      document.documentElement.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("theme", next);
+      } catch {
+        /* ignore */
+      }
+      sync();
+    });
+  }
+</script>

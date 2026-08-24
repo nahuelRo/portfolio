@@ -3,10 +3,15 @@ export const site = {
   role: "Full Stack Developer",
   tagline:
     "Construyo productos operativos end-to-end: SaaS, logística, salud y e-commerce. El stack lo elijo según el problema.",
-  location: "San Pedro, Buenos Aires · Remoto",
+  location: "San Pedro, Buenos Aires",
+  availability: "Disponible para trabajo remoto (LATAM / España)",
+  avatar: "/avatar.jpg",
+  avatarAlt: "Foto de Nahuel Rodriguez",
   email: "nahuelr.developer@gmail.com",
   linkedin: "https://www.linkedin.com/in/nahuelro/",
   github: "https://github.com/nahuelRo",
+  cvUrl: "/cv.pdf",
+  cvFilename: "Nahuel_Rodriguez_Full_Stack_Developer.pdf",
   url: "https://nahuel-rodriguez.vercel.app",
   description:
     "Portfolio de Nahuel Rodriguez, Full Stack Developer. Productos en producción con TypeScript, Next.js, NestJS, Vue, Laravel, AWS y PostgreSQL.",
@@ -38,7 +43,7 @@ export const site = {
       items: ["AWS", "Docker", "Git", "CI básico"],
     },
     {
-      category: "AI aplicada",
+      category: "IA aplicada",
       items: ["MCP", "Cursor", "Claude", "desarrollo asistido por IA"],
     },
   ],

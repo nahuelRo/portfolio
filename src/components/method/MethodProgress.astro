@@ -1,0 +1,36 @@
+---
+import type { MethodStage } from "../../data/method";
+
+interface Props {
+  stages: MethodStage[];
+}
+
+const { stages } = Astro.props;
+---
+
+<nav
+  class="method-progress sticky top-[3.6rem] z-30 border-b border-line/50 bg-ink/85 backdrop-blur-md"
+  aria-label="Etapas del método"
+  data-method-progress
+>
+  <div class="mx-auto max-w-5xl overflow-x-auto px-5 py-3">
+    <ol class="flex min-w-max items-center gap-2 md:gap-3">
+      {
+        stages.map((stage) => (
+          <li>
+            <a
+              href={`#${stage.id}`}
+              class="method-progress-link inline-flex items-center gap-2 rounded-full border border-transparent px-2.5 py-1 text-xs text-muted transition hover:text-cream"
+              data-progress-link={stage.id}
+            >
+              <span class="font-display font-semibold text-accent/80">
+                {stage.number}
+              </span>
+              <span class="hidden sm:inline">{stage.label}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</nav>
