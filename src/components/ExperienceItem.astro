@@ -1,0 +1,59 @@
+---
+import { render, type CollectionEntry } from "astro:content";
+
+interface Props {
+  item: CollectionEntry<"experience">;
+}
+
+const { item } = Astro.props;
+const { Content } = await render(item);
+---
+
+<li class="relative border-l border-line pl-6">
+  <span
+    class="absolute top-1.5 -left-[5px] h-2.5 w-2.5 rounded-full bg-accent"
+    aria-hidden="true"
+  ></span>
+  <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+    <h3 class="font-display text-lg font-semibold text-cream">
+      {item.data.company}
+    </h3>
+    <p class="text-sm text-muted">
+      {item.data.start} – {item.data.end}
+    </p>
+  </div>
+  <p class="mt-1 text-sm font-medium text-accent-soft">
+    {item.data.role}
+    {item.data.employmentType ? ` · ${item.data.employmentType}` : ""}
+  </p>
+  <div
+    class="experience-body mt-4 space-y-3 text-[0.95rem] leading-relaxed text-cream/80"
+  >
+    <Content />
+  </div>
+  {
+    item.data.stack.length > 0 && (
+      <ul class="mt-4 flex flex-wrap gap-2" aria-label="Stack">
+        {item.data.stack.map((tech) => (
+          <li class="rounded-md border border-line bg-ink-elevated px-2.5 py-1 text-xs text-muted">
+            {tech}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</li>
+
+<style>
+  .experience-body :global(p) {
+    margin: 0;
+  }
+  .experience-body :global(ul) {
+    margin: 0.5rem 0 0;
+    padding-left: 1.1rem;
+    list-style: disc;
+  }
+  .experience-body :global(li) {
+    margin-top: 0.35rem;
+  }
+</style>

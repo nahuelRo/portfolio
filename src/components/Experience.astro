@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from "astro:content";
+import ExperienceItem from "./ExperienceItem.astro";
+
+interface Props {
+  items: CollectionEntry<"experience">[];
+}
+
+const { items } = Astro.props;
+---
+
+<section
+  id="experiencia"
+  class="section-y border-b border-line/50"
+  aria-labelledby="exp-heading"
+>
+  <div class="mx-auto max-w-3xl px-5">
+    <h2
+      id="exp-heading"
+      class="font-display text-sm font-semibold uppercase tracking-[0.18em] text-accent"
+    >
+      Experiencia
+    </h2>
+    <ol class="mt-10 space-y-10">
+      {items.map((item) => <ExperienceItem item={item} />)}
+    </ol>
+  </div>
+</section>

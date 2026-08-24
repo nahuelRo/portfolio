@@ -1,0 +1,46 @@
+---
+import { site } from "../data/site";
+---
+
+<section
+  id="contacto"
+  class="section-y"
+  aria-labelledby="contact-heading"
+>
+  <div class="mx-auto max-w-3xl px-5">
+    <h2
+      id="contact-heading"
+      class="font-display text-sm font-semibold uppercase tracking-[0.18em] text-accent"
+    >
+      Contacto
+    </h2>
+    <p class="mt-4 max-w-xl text-lg text-cream/90">
+      ¿Tenés un producto o un equipo que necesite alguien hands-on de punta a
+      punta? Escribime.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a
+        href={`mailto:${site.email}`}
+        class="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-accent-soft"
+      >
+        {site.email}
+      </a>
+      <a
+        href={site.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-cream transition hover:border-accent hover:text-accent-soft"
+      >
+        LinkedIn
+      </a>
+      <a
+        href={site.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-cream transition hover:border-accent hover:text-accent-soft"
+      >
+        GitHub
+      </a>
+    </div>
+  </div>
+</section>

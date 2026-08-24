@@ -1,0 +1,14 @@
+---
+import { site } from "../data/site";
+---
+
+<section id="sobre-mi" class="section-y border-b border-line/50" aria-labelledby="about-heading">
+  <div class="mx-auto max-w-3xl px-5">
+    <h2 id="about-heading" class="font-display text-sm font-semibold uppercase tracking-[0.18em] text-accent">
+      Sobre mí
+    </h2>
+    <div class="mt-6 space-y-4 text-base leading-relaxed text-cream/85 md:text-lg">
+      {site.about.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </div>
+</section>
