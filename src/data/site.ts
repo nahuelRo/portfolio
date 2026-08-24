@@ -4,7 +4,6 @@ export const site = {
   tagline:
     "Construyo productos operativos end-to-end: SaaS, logística, salud y e-commerce. El stack lo elijo según el problema.",
   location: "San Pedro, Buenos Aires",
-  availability: "Disponible para trabajo remoto (LATAM / España)",
   avatar: "/avatar.jpg",
   avatarAlt: "Foto de Nahuel Rodriguez",
   email: "nahuelr.developer@gmail.com",
