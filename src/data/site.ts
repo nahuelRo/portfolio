@@ -11,7 +11,7 @@ export const site = {
   github: "https://github.com/nahuelRo",
   cvUrl: "/cv.pdf",
   cvFilename: "Nahuel_Rodriguez_Full_Stack_Developer.pdf",
-  url: "https://nahuel-rodriguez.vercel.app",
+  url: "https://nahuelro.vercel.app",
   description:
     "Portfolio de Nahuel Rodriguez, Full Stack Developer. Productos en producción con TypeScript, Next.js, NestJS, Vue, Laravel, AWS y PostgreSQL.",
   about: [
