@@ -28,6 +28,7 @@ const projects = defineCollection({
     stack: z.array(z.string()).default([]),
     demoUrl: z.string().url().optional(),
     repoUrl: z.string().url().optional(),
+    caseUrl: z.string().optional(),
     status: z.enum(["live", "coming-soon", "case-only"]).default("case-only"),
   }),
 });

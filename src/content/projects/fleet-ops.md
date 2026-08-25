@@ -1,14 +1,18 @@
 ---
 title: "Sistema de gestión de flotas"
-summary: "Demo de operaciones de flota — choferes, viajes y documentación — con datos sintéticos. Próximamente navegable."
-kind: placeholder
+summary: "Operaciones de flota — viajes, choferes, documentos y facturación — con demo pública y datos 100% sintéticos."
+kind: demo
 period: "2026"
 order: 2
 stack:
   - Next.js
   - TypeScript
   - Supabase
-status: coming-soon
+  - PostgreSQL
+demoUrl: https://fleet-ops-demo-azure.vercel.app/app/login
+repoUrl: https://github.com/nahuelRo/fleet-ops-demo
+caseUrl: /proyectos/flotas
+status: live
 ---
 
-Basado en experiencia real construyendo una app interna de flotas y documentación operativa. La demo pública usará mock data; sin datos ni marcas de clientes.
+Producto Full Stack de operaciones de transporte. Demo sanitizada (sin marca ni datos de clientes) + caso de estudio que muestra el método aplicado.

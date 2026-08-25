@@ -1,0 +1,123 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { fleetCasePage, fleetCaseStages } from "../../data/fleet-case";
+import "../../styles/global.css";
+---
+
+<BaseLayout title={fleetCasePage.title} description={fleetCasePage.description}>
+  <Header />
+  <main id="contenido">
+    <section class="section-y border-b border-line/50">
+      <div class="mx-auto max-w-3xl px-5">
+        <p
+          class="font-display text-sm font-semibold uppercase tracking-[0.18em] text-accent"
+        >
+          {fleetCasePage.hero.eyebrow}
+        </p>
+        <h1
+          class="font-display mt-4 max-w-2xl text-3xl font-semibold tracking-tight md:text-5xl"
+        >
+          {fleetCasePage.hero.title}
+        </h1>
+        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-muted md:text-xl">
+          {fleetCasePage.hero.subtitle}
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a
+            href={fleetCasePage.demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-accent-soft"
+          >
+            Abrir demo
+          </a>
+          <a
+            href={fleetCasePage.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-cream transition hover:border-accent hover:text-accent-soft"
+          >
+            Ver código
+          </a>
+          <a
+            href="/metodo"
+            class="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-cream transition hover:border-accent hover:text-accent-soft"
+          >
+            Cómo trabajo
+          </a>
+        </div>
+        <p class="mt-5 text-sm text-muted">
+          Login demo:
+          <code class="text-cream">{fleetCasePage.demoCredentials.email}</code>
+          /
+          <code class="text-cream">{fleetCasePage.demoCredentials.password}</code>
+        </p>
+      </div>
+    </section>
+
+    {
+      fleetCaseStages.map((stage, index) => (
+        <section
+          class:list={[
+            "section-y border-b border-line/50",
+            index % 2 === 1 && "bg-ink-elevated/40",
+          ]}
+          aria-labelledby={`fleet-stage-${stage.id}`}
+        >
+          <div class="mx-auto max-w-3xl px-5">
+            <p class="font-display text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+              {stage.number} · {stage.label}
+            </p>
+            <h2
+              id={`fleet-stage-${stage.id}`}
+              class="font-display mt-3 text-2xl font-semibold tracking-tight md:text-3xl"
+            >
+              {stage.title}
+            </h2>
+            <p class="mt-4 max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+              {stage.body}
+            </p>
+            <ul class="mt-6 space-y-2 text-[0.95rem] leading-relaxed text-cream/85">
+              {stage.points.map((point) => (
+                <li class="flex gap-3">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true" />
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ))
+    }
+
+    <section class="section-y">
+      <div class="mx-auto max-w-3xl px-5 text-center">
+        <h2 class="font-display text-2xl font-semibold tracking-tight md:text-3xl">
+          {fleetCasePage.closing.title}
+        </h2>
+        <p class="mx-auto mt-4 max-w-xl text-base leading-relaxed text-muted md:text-lg">
+          {fleetCasePage.closing.body}
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+          <a
+            href={fleetCasePage.demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-ink transition hover:bg-accent-soft"
+          >
+            Probar la demo
+          </a>
+          <a
+            href="/#proyectos"
+            class="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-cream transition hover:border-accent hover:text-accent-soft"
+          >
+            Volver a proyectos
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
